@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/relativeLayout3"
+            android:layout_width="321dp"
+            android:layout_height="186dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="194dp"
+            android:layout_marginEnd="45dp"
+            app:cardCornerRadius="13dp"
+            android:background="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/motorcycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/motorcycle"
+
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/tripTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_below="@+id/motorcycle"
+                android:layout_marginTop="10dp"
+                android:text="Trip Title"
+                android:textColor="#DE3A3939"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/tripdates"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginTop="6dp"
+                android:text="trip date"
+                android:textColor="#4F504F"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginTop="11dp"
+                android:textSize="14sp"
+                android:textColor="#4F504F"
+                android:text="time"
+                android:fontFamily="sans-serif"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="start"
+                    android:textColor="#4F504F"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:paddingEnd="5dp"/>
+                <View
+                    android:layout_width="61dp"
+                    android:layout_height="1dp"
+                    android:background="#979797"
+                    android:layout_marginTop="2dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="end"
+                    android:paddingStart="5dp"
+                    android:textColor="#4F504F"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"/>
+            </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="39dp"
+            android:foregroundGravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+            tools:listitem="@layout/mileston_cardview" />
+
+        <RelativeLayout
+            android:id="@+id/recommendation"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="61dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:fontFamily="sans-serif"
+                android:text="Recommendation"
+                android:textColor="#4F504F"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <RelativeLayout
+                android:id="@+id/relativerecommendation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+
+                    android:background="@drawable/recommendation_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/riding_gear"
+                    android:textColor="#EE7F2C"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/textView"
+                    android:background="@drawable/recommendation_background"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Winter wear"
+                    android:textColor="#EE7F2C"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:background="@drawable/recommendation_background"
+                    android:gravity="center"
+                    android:text="Drinking water"
+                    android:textColor="#EE7F2C"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/inviteRiders"
+            style="@style/fontstyle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/userbackground"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingStart="50dp"
+            android:paddingBottom="10dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recommendation" />
+
+        <Button
+            android:id="@+id/createbutton"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/createbutton"
+            android:text="CREATE"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inviteRiders" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RideApp</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="vehicle_type">Vehicle type</string>
+    <string name="comments">Comments</string>
+    <string name="find_a_dealer">FIND A DEALER</string>
+    <string name="invite_other_riders">Invite other riders</string>
+    <string name="start_time">Start time</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="name_of_the_trip">Name of the trip</string>
+    <string name="where_do_you_want_to_go">Where do you want to go?</string>
+    <string name="from">From</string>
+    <string name="add_a_milestone">Add a milestone</string>
+    <string name="current_location">Current location</string>
+    <string name="done">DONE</string>
+    <string name="riding_gear">Riding Gear</string>
+    <string name="this_is_to_make_a_break_journey_in_between_your_trip">This is to make a break journey in between your trip</string>
+</resources>
